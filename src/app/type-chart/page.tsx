@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import chart from "@/data/type-chart.json";
+import { AdsterraBanner } from "@/components/adsterra-banner";
+import { RECTANGLE } from "@/lib/ads";
 import { creatures } from "@/lib/creatures";
 
 export const metadata: Metadata = {
@@ -172,6 +174,7 @@ export default function TypeChartPage() {
           </div>
         ))}
       </section>
+      <AdsterraBanner slot={RECTANGLE} className="mt-10" />
     </div>
   );
 }

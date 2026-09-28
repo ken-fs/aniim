@@ -4,28 +4,28 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Aniimo Guides — Catch Rate, Starters, Evolution",
   description:
-    "Aniimo guides built from official game data: the full catch formula, a beginner roadmap and how evolution and resonance work — no speculation.",
+    "Plain-English Aniimo guides: what to do first, why your catches keep failing, and whether evolving is worth it.",
   alternates: { canonical: "/guides/" },
 };
 
 const GUIDES = [
   {
-    href: "/guides/catch-chance/",
-    title: "Catch Chance, Explained",
-    desc: "The complete official catch formula — Aniipods, level gap, HP, backstab and every multiplier table, with worked examples.",
-    tag: "Deep dive",
+    href: "/guides/beginner/",
+    title: "Just Started? Do These Five Things",
+    desc: "Codes, starter pick, what the roles mean, and the level-gap mistake everyone makes in hour one.",
+    tag: "Start here",
   },
   {
-    href: "/guides/beginner/",
-    title: "Beginner's Roadmap",
-    desc: "What to do in your first hours: area progression, roles explained, which Aniimo to invest in and the traps to avoid.",
-    tag: "New players",
+    href: "/guides/catch-chance/",
+    title: "Why Do My Catches Keep Failing?",
+    desc: "The catch formula in plain words. Level gap, HP, pods, backstab, Alphas — with the actual numbers.",
+    tag: "Most useful",
   },
   {
     href: "/guides/evolution/",
-    title: "Evolution & Resonance",
-    desc: "Lumin, Gamma and Nova stages, what Resonance Training costs, and how to plan a long-term team.",
-    tag: "Progression",
+    title: "Evolving & Resonance: Worth It or Not?",
+    desc: "What the stages do to your catch rate, what crystals really cost you, and the form variants nobody mentions.",
+    tag: "Later game",
   },
 ];
 

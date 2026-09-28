@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import itemsData from "@/data/items.json";
 import { ItemsBrowser } from "./items-browser";
+import { AdsterraBanner } from "@/components/adsterra-banner";
+import { RECTANGLE } from "@/lib/ads";
 
 export const metadata: Metadata = {
   title: `Aniimo Items Database — All ${Object.keys(itemsData.items).length} Items`,
@@ -28,6 +30,7 @@ export default function ItemsPage() {
         materials, eggs, equipment and homeland furniture. Filter by category or rarity, or search by name.
       </p>
       <ItemsBrowser items={items} categories={categories} rarities={rarities} />
+      <AdsterraBanner slot={RECTANGLE} className="mt-10" />
     </div>
   );
 }

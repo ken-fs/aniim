@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CatchCalculator } from "./calculator";
+import { AdsterraBanner } from "@/components/adsterra-banner";
+import { RECTANGLE } from "@/lib/ads";
 
 export const metadata: Metadata = {
   title: "Aniimo Catch Rate Calculator — Pods, Level & HP",
@@ -73,6 +75,7 @@ export default function CatchCalculatorPage() {
           </ul>
         </div>
       </section>
+      <AdsterraBanner slot={RECTANGLE} className="mt-10" />
     </div>
   );
 }

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { creatures } from "@/lib/creatures";
 import { MapExplorer } from "./map-explorer";
+import { AdsterraBanner } from "@/components/adsterra-banner";
+import { RECTANGLE } from "@/lib/ads";
 import { regionSlug } from "@/lib/forms-meta";
 
 export const metadata: Metadata = {
@@ -63,6 +65,7 @@ export default function MapPage() {
           </ul>
         </div>
       </section>
+      <AdsterraBanner slot={RECTANGLE} className="mt-10" />
     </div>
   );
 }
