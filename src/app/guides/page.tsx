@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Aniimo Guides — Catch Chance, Beginners, Evolution",
+  title: "Aniimo Guides — Catch Rate, Starters, Evolution",
   description:
-    "Aniimo guides built from official game data: the full catch-chance formula explained with tables, a beginner roadmap, and how evolution stages and resonance training work.",
+    "Aniimo guides built from official game data: the full catch formula, a beginner roadmap and how evolution and resonance work — no speculation.",
   alternates: { canonical: "/guides/" },
 };
 

@@ -4,9 +4,9 @@ import { creatures } from "@/lib/creatures";
 import { ElementChip } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Aniimo Habitats — Where Every Aniimo Spawns (Idyll Regions)",
+  title: "Aniimo Habitats — Where Every Aniimo Spawns",
   description:
-    "Every Aniimo habitat in Idyll: Nimbus Fields, The Mistwoods, The Argent Strait, Echoback Landing, Beast Fang Ridge and more — with the full spawn list per region.",
+    "Every Aniimo habitat in Idyll — Nimbus Fields, The Mistwoods, Echoback Landing, Beast Fang Ridge and more — with full spawn lists per region.",
   alternates: { canonical: "/habitats/" },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Aniimo Beginner's Guide — Starters, Roles and Early Progression",
+  title: "Aniimo Beginner's Guide — Starters & Progression",
   description:
-    "Start Aniimo right: Helion vs Lunara starter comparison with official stats, what each role does, early progression priorities and the catch-rate habits that save hours.",
+    "Start Aniimo right: Helion vs Lunara with official stats, what each role does, and the catch-rate habits that save hours.",
   alternates: { canonical: "/guides/beginner/" },
 };
 

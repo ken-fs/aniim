@@ -4,9 +4,9 @@ import { creatures, roles } from "@/lib/creatures";
 import { ElementChip, SectionTitle } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Aniimo Tier List — Best Aniimo by Role (Launch Patch)",
+  title: "Aniimo Tier List — Best by Role (Launch Patch)",
   description:
-    "Aniimo tier list built from official base stats: the strongest DPS, BREAK, Support, Heal and Regen Aniimo at global launch, grouped into tiers with data you can verify.",
+    "Aniimo tier list built from official base stats: the strongest DPS, BREAK, Support and Heal Aniimo at launch, in tiers you can verify yourself.",
   alternates: { canonical: "/tier-list/" },
 };
 

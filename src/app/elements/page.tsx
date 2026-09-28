@@ -4,9 +4,9 @@ import { creatures } from "@/lib/creatures";
 import { ElementChip, SectionTitle } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Aniimo Elements — Every Type and the Aniimo That Use It",
+  title: "Aniimo Elements — Every Type & Its Aniimo",
   description:
-    "All Aniimo elements at launch — fire, water, grass, electric, ice, rock, wind, dark and holy — with the full creature list, counts and dual-element combos.",
+    "All 9 Aniimo elements — fire, water, grass, electric, ice, rock, wind, dark, holy — with the full creature list per type and every dual-element combo.",
   alternates: { canonical: "/elements/" },
 };
 

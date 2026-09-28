@@ -1,0 +1,28 @@
+# aniim.org — Aniimo Wiki & Database
+
+> Unofficial but data-accurate Aniimo reference. All creature stats, skills, evolution chains
+> and habitats mirror the official in-game index; catch probabilities come from the game's
+> official Probability Details. Updated for the global launch (PC/console 16 Sept 2026, mobile 23 Sept 2026).
+
+## Core database
+- [Aniimo Dex](https://aniim.org/dex/): all 88 Aniimo, filterable by element and role
+- [Tier List](https://aniim.org/tier-list/): launch tiers generated from official base stat totals (auditable)
+- [Elements](https://aniim.org/elements/): all 9 types, creature lists, dual-element combos
+- [Map / Region Explorer](https://aniim.org/map/): every spawn region and its creature list
+- [Habitats](https://aniim.org/habitats/): same spawn data in plain list form
+
+## Tools
+- [Catch Rate Calculator](https://aniim.org/catch-calculator/): applies the official multipliers (area, stage, level gap, Aniipod, HP, backstab, Alpha rules) and shows odds + throws needed
+
+## Guides
+- [Catch Chance Formula](https://aniim.org/guides/catch-chance/): every official multiplier table with worked examples
+- [Beginner's Roadmap](https://aniim.org/guides/beginner/): Helion vs Lunara starter comparison, roles, early priorities
+- [Evolution & Resonance](https://aniim.org/guides/evolution/): Lumin/Gamma/Nova stages, training costs
+
+## Live data
+- [Gift Codes](https://aniim.org/codes/): working codes with rewards, checked daily automatically
+
+## Notes
+- Creature pages: https://aniim.org/dex/{slug}/ (e.g. https://aniim.org/dex/emberpup/)
+- Data sources: official in-game index (wiki.aniimo.com) + official Probability Details
+- Not affiliated with Pawprint Studio; Aniimo is their trademark

@@ -4,7 +4,7 @@ import { creatures } from "@/lib/creatures";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About aniim.org — Data Sources & Editorial Policy",
+  title: "About aniim.org — Data & Editorial Policy",
   description: "How aniim.org builds the Aniimo database: where the data comes from, how often it is updated, and how to report a correction.",
   alternates: { canonical: "/about/" },
 };

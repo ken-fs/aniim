@@ -3,9 +3,9 @@ import Link from "next/link";
 import { CatchCalculator } from "./calculator";
 
 export const metadata: Metadata = {
-  title: "Aniimo Catch Rate Calculator — Pods, Level Gap, HP & Alpha Odds",
+  title: "Aniimo Catch Rate Calculator — Pods, Level & HP",
   description:
-    "Work out your exact Aniimo catch chance: pick area, stage, level gap, Aniipod, HP and backstab — the calculator applies every official multiplier and shows the boosts needed for 50% and 90% odds.",
+    "Work out your exact Aniimo catch chance: area, stage, level gap, Aniipod, HP and backstab — every official multiplier, live. See the boosts for 50%/90% odds.",
   alternates: { canonical: "/catch-calculator/" },
 };
 

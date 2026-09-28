@@ -3,9 +3,9 @@ import Link from "next/link";
 import { creatures } from "@/lib/creatures";
 
 export const metadata: Metadata = {
-  title: "Aniimo Evolution & Resonance — Stages and Training Costs",
+  title: "Aniimo Evolution & Resonance — Costs Explained",
   description:
-    "How Aniimo evolution stages work — Lumin, Gamma and Nova — plus the full breakdown of Resonance Training levels, requirements and Omnisource Crystal costs at launch.",
+    "How Aniimo evolution stages work — Lumin, Gamma, Nova — plus Resonance Training levels, requirements and Omnisource Crystal costs.",
   alternates: { canonical: "/guides/evolution/" },
 };
 

@@ -5,9 +5,9 @@ import { CopyCode } from "./copy-code";
 const ACTIVE_COUNT = codesData.codes.filter((c) => c.status === "active").length;
 
 export const metadata: Metadata = {
-  title: `Aniimo Codes (September 2026) — ${ACTIVE_COUNT} Working Gift Codes`,
+  title: `Aniimo Codes (Sept 2026) — ${ACTIVE_COUNT} Working Codes`,
   description:
-    `All working Aniimo gift codes for September 2026, with rewards and region notes. Checked ${codesData.checked}. Updated the day a code drops or is retired.`,
+    `All working Aniimo gift codes with rewards and region notes. Last checked ${codesData.checked} — updated the day a code drops or expires.`,
   alternates: { canonical: "/codes/" },
 };
 

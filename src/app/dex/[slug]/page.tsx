@@ -15,8 +15,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const c = creatureBySlug.get(slug);
   if (!c) return {};
   const forms = Object.keys(c.forms).length;
+  const base = `${c.name} — Stats, Skills, Evolution & Habitats`;
+  // 加品牌后缀超 60 字符时用 absolute(否则 SERP 会截断)
+  const title: Metadata["title"] = base.length + 12 <= 60 ? base : { absolute: base };
   return {
-    title: `${c.name} — Stats, Skills, Evolution & Habitats`,
+    title,
     description: `${c.name} is a ${c.elements.join("/")} ${c.role} Aniimo (base total ${c.base.stats.total}). Stats, skills, ${forms} form${forms > 1 ? "s" : ""}, evolution stages and habitats.`,
     alternates: { canonical: `/dex/${c.slug}/` },
   };

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Aniimo Catch Chance Formula — Every Multiplier Explained",
+  title: "Aniimo Catch Chance Formula — All Multipliers",
   description:
-    "The complete Aniimo catch-rate formula from the official Probability Details: base catch chance by area, level gap, HP, backstab and status multipliers, Aniipod tiers and Alpha odds — with worked examples.",
+    "The complete Aniimo catch-rate formula: base chance by area, level gap, HP, backstab, Aniipod tiers and Alpha odds — with worked examples.",
   alternates: { canonical: "/guides/catch-chance/" },
 };
 

@@ -5,9 +5,9 @@ import { MapExplorer } from "./map-explorer";
 import { regionSlug } from "@/lib/forms-meta";
 
 export const metadata: Metadata = {
-  title: "Aniimo Map — Interactive Region Explorer (All Spawn Areas)",
+  title: "Aniimo Map — Interactive Region Explorer",
   description:
-    "Find where every Aniimo spawns. Pick a region of Idyll — Russet Highlands, Beast Fang Ridge, Nimbus Fields and more — or search a creature to see every area it appears in.",
+    "Find where every Aniimo spawns. Pick a region — Russet Highlands, Beast Fang Ridge, Nimbus Fields — or search a creature to see all its areas.",
   alternates: { canonical: "/map/" },
 };
 
