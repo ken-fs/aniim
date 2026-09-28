@@ -195,10 +195,18 @@ async function main() {
     console.log("  ✅ 已推送（SSH）");
   } catch {
     try {
-      git(["push", "-q", "origin", "main"], { https_proxy: "http://127.0.0.1:7897", http_proxy: "http://127.0.0.1:7897" });
-      console.log("  ✅ 已推送（代理）");
-    } catch (e) {
-      console.error("  ⚠️ 推送失败，内容已 commit 留在本地：", String(e).slice(0, 200));
+      const home = process.env.HOME;
+      git(["push", "-q", "git@github.com:ken-fs/aniim.git", "main"], {
+        GIT_SSH_COMMAND: `ssh -i ${home}/.ssh/id_ed25519 -o IdentitiesOnly=yes -o BatchMode=yes`,
+      });
+      console.log("  ✅ 已推送（SSH 显式 key）");
+    } catch {
+      try {
+        git(["-c", "http.proxy=http://127.0.0.1:7897", "push", "-q", "https://github.com/ken-fs/aniim.git", "main"]);
+        console.log("  ✅ 已推送（https 代理）");
+      } catch (e) {
+        console.error("  ⚠️ 推送失败，内容已 commit 留在本地：", String(e).slice(0, 200));
+      }
     }
   }
 }
