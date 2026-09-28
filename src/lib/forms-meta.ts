@@ -48,3 +48,8 @@ export const FORM_LABELS: Record<string, string> = {
 export function formLabel(slug: string) {
   return FORM_LABELS[slug] ?? slug.replace(/-form$/, "").replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
+
+/** 区域名 → URL slug(地图页深链用) */
+export function regionSlug(name: string) {
+  return name.toLowerCase().replace(/^(the|a)\s+/, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}

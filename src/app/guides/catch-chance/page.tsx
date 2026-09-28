@@ -38,7 +38,8 @@ export default function CatchChanceGuide() {
       <h1 className="font-display mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">Aniimo Catch Chance, Explained</h1>
       <p className="mt-2 text-lg text-ink-soft">
         Every number on this page comes from the game&apos;s official Probability Details. Once you understand the
-        multipliers, you stop wasting Aniipods — and know exactly when a catch is worth attempting.
+        multipliers, you stop wasting Aniipods — and know exactly when a catch is worth attempting. Prefer a hands-on
+        tool? <Link href="/catch-calculator/" className="font-semibold text-brand underline">Use the live catch calculator</Link>.
       </p>
 
       <h2 className="font-display mt-10 text-2xl font-bold">The two formulas</h2>

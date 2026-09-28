@@ -20,8 +20,9 @@ const NAV = [
   { href: "/dex/", label: "Aniimo Dex" },
   { href: "/tier-list/", label: "Tier List" },
   { href: "/codes/", label: "Codes" },
+  { href: "/map/", label: "Map" },
+  { href: "/catch-calculator/", label: "Calculator" },
   { href: "/elements/", label: "Elements" },
-  { href: "/habitats/", label: "Habitats" },
   { href: "/guides/", label: "Guides" },
 ];
 
@@ -41,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
               ))}
             </nav>
-            <div className="ml-auto text-xs text-ink-soft">Unofficial fan wiki</div>
+            <div className="ml-auto" />
           </div>
           <nav className="flex gap-1 overflow-x-auto border-t border-line px-4 py-1.5 md:hidden">
             {NAV.map((n) => (
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="text-sm font-semibold">Database</div>
               <ul className="mt-2 space-y-1 text-sm text-ink-soft">
                 <li><Link href="/dex/">Aniimo Dex</Link></li>
+                <li><Link href="/map/">Interactive Map</Link></li>
                 <li><Link href="/elements/">Elements</Link></li>
                 <li><Link href="/habitats/">Habitats</Link></li>
                 <li><Link href="/tier-list/">Tier List</Link></li>
@@ -73,6 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="text-sm font-semibold">Players</div>
               <ul className="mt-2 space-y-1 text-sm text-ink-soft">
                 <li><Link href="/codes/">Gift Codes</Link></li>
+                <li><Link href="/catch-calculator/">Catch Calculator</Link></li>
                 <li><Link href="/guides/">Guides</Link></li>
                 <li><Link href="/guides/catch-chance/">Catch Chance Guide</Link></li>
                 <li><Link href="/guides/beginner/">Beginner Guide</Link></li>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { creatures, creatureBySlug, formLabel } from "@/lib/creatures";
 import { ElementChip, RoleChip, SectionTitle } from "@/components/ui";
+import { regionSlug } from "@/lib/forms-meta";
 import { FormViewer } from "./form-viewer";
 
 export function generateStaticParams() {
@@ -78,7 +79,7 @@ export default async function CreaturePage({ params }: { params: Promise<{ slug:
           <SectionTitle sub="Official spawn regions">Habitats</SectionTitle>
           <div className="flex flex-wrap gap-2">
             {c.base.habitats.map((h) => (
-              <Link key={h} href={`/habitats/`} className="rounded-full border border-line bg-card px-4 py-1.5 text-sm font-medium hover:bg-black/5">
+              <Link key={h} href={`/map/?region=${regionSlug(h)}`} className="rounded-full border border-line bg-card px-4 py-1.5 text-sm font-medium hover:bg-black/5">
                 {h}
               </Link>
             ))}
