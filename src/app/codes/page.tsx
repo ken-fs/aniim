@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import codesData from "@/data/codes.json";
 import { CopyCode } from "./copy-code";
 
+const ACTIVE_COUNT = codesData.codes.filter((c) => c.status === "active").length;
+
 export const metadata: Metadata = {
-  title: `Aniimo Codes (September 2026) — ${codesData.codes.length} Working Gift Codes`,
+  title: `Aniimo Codes (September 2026) — ${ACTIVE_COUNT} Working Gift Codes`,
   description:
     `All working Aniimo gift codes for September 2026, with rewards and region notes. Checked ${codesData.checked}. Updated the day a code drops or is retired.`,
   alternates: { canonical: "/codes/" },
@@ -11,6 +13,7 @@ export const metadata: Metadata = {
 
 export default function CodesPage() {
   const active = codesData.codes.filter((c) => c.status === "active");
+  const expired = codesData.codes.filter((c) => c.status !== "active");
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -58,6 +61,22 @@ export default function CodesPage() {
           </div>
         ))}
       </div>
+
+      {expired.length > 0 && (
+        <section className="mt-8">
+          <h2 className="font-display text-lg font-bold text-ink-soft">Expired codes</h2>
+          <p className="mt-1 text-sm text-ink-soft">Listed for reference — these no longer work.</p>
+          <div className="mt-3 space-y-1.5">
+            {expired.map((c) => (
+              <div key={c.code} className="flex flex-wrap items-center gap-3 rounded-xl border border-line bg-card/60 px-4 py-2 text-sm">
+                <code className="font-semibold text-ink-soft line-through">{c.code}</code>
+                <span className="text-xs text-ink-soft">{c.rewards}</span>
+                {"expired" in c && c.expired && <span className="ml-auto text-xs text-ink-soft">expired {c.expired}</span>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mt-10">
         <h2 className="font-display text-2xl font-bold">How to redeem codes in Aniimo</h2>

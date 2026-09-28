@@ -5,3 +5,5 @@ raw/
 *.tsbuildinfo
 .DS_Store
 .env*
+scripts/.codes-state.json
+public/.well-known/
