@@ -1,10 +1,14 @@
 import raw from "@/data/forms.json";
+import extraRaw from "@/data/creatures-extra.json";
 import type { Creature, FormData } from "./forms-meta";
 
 export type { Creature, FormData, Skill } from "./forms-meta";
 export { FORM_LABELS, formLabel } from "./forms-meta";
 
 const data = raw as unknown as Record<string, Record<string, FormData>>;
+// 游戏本体数据补充的 12 个生物(官方 wiki 未收录):来源为游戏客户端文案 + 三源交叉验证
+const extra = extraRaw as unknown as Record<string, Record<string, FormData>>;
+const allData: Record<string, Record<string, FormData>> = { ...extra, ...data };
 
 function slugify(name: string) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -12,7 +16,7 @@ function slugify(name: string) {
 
 function buildAll(): Creature[] {
   const list: Creature[] = [];
-  for (const [itemId, forms] of Object.entries(data)) {
+  for (const [itemId, forms] of Object.entries(allData)) {
     const base = forms["basic-form"] ?? Object.values(forms)[0];
     if (!base?.name || !base.number) continue;
     list.push({

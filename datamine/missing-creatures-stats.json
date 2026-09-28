@@ -1,0 +1,184 @@
+{
+ "bubbeep": {
+  "num": "088",
+  "name": "Bubbeep",
+  "element": "Grass",
+  "stats": {
+   "HP": "104",
+   "ATK": "85",
+   "M.ATK": "85",
+   "DEF": "78",
+   "M.DEF": "75",
+   "EP": "82",
+   "BRK": "43"
+  }
+ },
+ "cheekie": {
+  "num": "086",
+  "name": "Cheekie",
+  "element": "Ice",
+  "stats": {
+   "HP": "89",
+   "ATK": "64",
+   "M.ATK": "64",
+   "DEF": "76",
+   "M.DEF": "79",
+   "EP": "88",
+   "BRK": "92"
+  }
+ },
+ "coraliz": {
+  "num": "085",
+  "name": "Coraliz",
+  "element": "Rock",
+  "stats": {
+   "HP": "98",
+   "ATK": "78",
+   "M.ATK": "78",
+   "DEF": "88",
+   "M.DEF": "93",
+   "EP": "108",
+   "BRK": "107"
+  }
+ },
+ "fennelun": {
+  "num": "�специ",
+  "name": "Fennelun",
+  "element": "holy",
+  "stats": {
+   "HP": 90,
+   "ATK": 116,
+   "M.ATK": 116,
+   "DEF": 65,
+   "M.DEF": 65,
+   "EP": 83,
+   "BRK": 85
+  },
+  "special": "Lunara 进化"
+ },
+ "gachapus": {
+  "num": "091",
+  "name": "Gachapus",
+  "element": "Water",
+  "stats": {
+   "HP": "106",
+   "ATK": "121",
+   "M.ATK": "121",
+   "DEF": "68",
+   "M.DEF": "77",
+   "EP": "106",
+   "BRK": "51"
+  }
+ },
+ "glameep": {
+  "num": "089",
+  "name": "Glameep",
+  "element": "Grass",
+  "stats": {
+   "HP": "122",
+   "ATK": "100",
+   "M.ATK": "100",
+   "DEF": "92",
+   "M.DEF": "89",
+   "EP": "97",
+   "BRK": "50"
+  }
+ },
+ "malangel": {
+  "num": "092",
+  "name": "Malangel",
+  "element": "Ice",
+  "stats": {
+   "HP": "100",
+   "ATK": "105",
+   "M.ATK": "105",
+   "DEF": "80",
+   "M.DEF": "80",
+   "EP": "100",
+   "BRK": "50"
+  }
+ },
+ "malevsera": {
+  "num": "093",
+  "name": "Malevsera",
+  "element": "Ice",
+  "stats": {
+   "HP": "88",
+   "ATK": "125",
+   "M.ATK": "125",
+   "DEF": "70",
+   "M.DEF": "80",
+   "EP": "110",
+   "BRK": "52"
+  }
+ },
+ "morphling": {
+  "num": "?",
+  "name": "?",
+  "element": "Fire",
+  "stats": {}
+ },
+ "popapus": {
+  "num": "090",
+  "name": "Popapus",
+  "element": "Water",
+  "stats": {
+   "HP": "90",
+   "ATK": "102",
+   "M.ATK": "102",
+   "DEF": "58",
+   "M.DEF": "65",
+   "EP": "90",
+   "BRK": "45"
+  }
+ },
+ "reefish": {
+  "num": "084",
+  "name": "Reefish",
+  "element": "Rock",
+  "stats": {
+   "HP": "83",
+   "ATK": "66",
+   "M.ATK": "66",
+   "DEF": "75",
+   "M.DEF": "79",
+   "EP": "92",
+   "BRK": "91"
+  }
+ },
+ "soleon": {
+  "num": "special",
+  "name": "Soleon",
+  "element": "holy",
+  "stats": {
+   "HP": 90,
+   "ATK": 116,
+   "M.ATK": 116,
+   "DEF": 65,
+   "M.DEF": 65,
+   "EP": 83,
+   "BRK": 85
+  },
+  "special": "Helion 进化"
+ },
+ "tarani": {
+  "num": "?",
+  "name": "?",
+  "element": "Fire",
+  "stats": {}
+ },
+ "wavwal": {
+  "num": "087",
+  "name": "Wavwal",
+  "element": "Ice",
+  "stats": {
+   "HP": "105",
+   "ATK": "75",
+   "M.ATK": "75",
+   "DEF": "89",
+   "M.DEF": "93",
+   "EP": "103",
+   "BRK": "110"
+  }
+ }
+}

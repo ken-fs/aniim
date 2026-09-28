@@ -5,7 +5,7 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://aniim.org",
   title: "Aniimo Wiki & Database — aniim.org",
   description:
-    "The complete Aniimo database: all 88 creatures with official stats, skills, evolutions and habitats — plus tier list, working codes and catch-rate tools.",
+    "The complete Aniimo database: 100 creatures with official stats, skills, evolutions and habitats — plus type chart, item database, tier list, working codes and catch-rate tools.",
   game: "Aniimo",
   developer: "Pawprint Studio",
   gaId: process.env.NEXT_PUBLIC_GA_ID ?? "",

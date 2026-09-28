@@ -1,0 +1,968 @@
+{
+ "10581": {
+  "basic-form": {
+   "url": "/aniimo/bubbeep/",
+   "name": "Bubbeep",
+   "number": 88,
+   "element": "grass",
+   "elements": [
+    "grass",
+    "water"
+   ],
+   "role": "Heal",
+   "description": "Aniimo Bubbeep is a Grass and Water-element Aniimo that restores health to the team.",
+   "stats": {
+    "total": 467,
+    "hp": 104,
+    "atk": 85,
+    "pdef": 78,
+    "mdef": 75,
+    "regen": 82,
+    "break": 43
+   },
+   "imageId": "10581",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10581",
+    "10583"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "Crescent Bay"
+   ],
+   "trait": {
+    "name": "Bubble Energy",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Baa-Baa Healbubb",
+     "desc": "20s",
+     "type": "",
+     "cost": "15",
+     "power": ""
+    },
+    {
+     "name": "Baa-Baa Sweetbubb",
+     "desc": "10s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "50"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Bubble Energy",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    },
+    {
+     "name": "Bubble Drift",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10461": {
+  "basic-form": {
+   "url": "/aniimo/cheekie/",
+   "name": "Cheekie",
+   "number": 86,
+   "element": "ice",
+   "elements": [
+    "ice"
+   ],
+   "role": "Break",
+   "description": "Aniimo Cheekie is a Ice-element Aniimo that breaks enemy guard.",
+   "stats": {
+    "total": 488,
+    "hp": 89,
+    "atk": 64,
+    "pdef": 76,
+    "mdef": 79,
+    "regen": 88,
+    "break": 92
+   },
+   "imageId": "10461",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10461",
+    "10463"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "Crescent Bay"
+   ],
+   "trait": {
+    "name": "Hard Winter",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Ground Slam",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "45"
+    },
+    {
+     "name": "Sand Rush",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "10",
+     "power": "45"
+    },
+    {
+     "name": "Icebreaker",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "10",
+     "power": "45"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Hard Winter",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10383": {
+  "basic-form": {
+   "url": "/aniimo/coraliz/",
+   "name": "Coraliz",
+   "number": 85,
+   "element": "rock",
+   "elements": [
+    "rock",
+    "water"
+   ],
+   "role": "Regen",
+   "description": "Aniimo Coraliz is a Rock and Water-element Aniimo that keeps energy flowing.",
+   "stats": {
+    "total": 572,
+    "hp": 98,
+    "atk": 78,
+    "pdef": 88,
+    "mdef": 93,
+    "regen": 108,
+    "break": 107
+   },
+   "imageId": "10383",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10381",
+    "10383"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "Crescent Bay"
+   ],
+   "trait": {
+    "name": "Overcharged Coral",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Coral Impact",
+     "desc": "18s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "10"
+    },
+    {
+     "name": "Coral Trap",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "67"
+    },
+    {
+     "name": "Quicksand Slam",
+     "desc": "10s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "28"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Coral Prison",
+     "desc": "20s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "70"
+    },
+    {
+     "name": "Overcharged Coral",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10373": {
+  "basic-form": {
+   "url": "/aniimo/fennelun/",
+   "name": "Fennelun",
+   "number": 900,
+   "element": "holy",
+   "elements": [
+    "holy"
+   ],
+   "role": "DPS",
+   "description": "Aniimo Fennelun is a Holy-element Aniimo that deals damage.",
+   "stats": {
+    "total": 504,
+    "hp": 90,
+    "atk": 116,
+    "pdef": 65,
+    "mdef": 65,
+    "regen": 83,
+    "break": 85
+   },
+   "imageId": "10373",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "trait": {
+    "name": "Lunar Power",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Moon Impact",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "15",
+     "power": "45"
+    },
+    {
+     "name": "Moon-Washed",
+     "desc": "18s",
+     "type": "",
+     "cost": "",
+     "power": ""
+    },
+    {
+     "name": "Lunar Eclipse",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "60"
+    },
+    {
+     "name": "Lumin Bolts",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "55"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Selene's Judgment",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "167"
+    },
+    {
+     "name": "Lunar Power",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10623": {
+  "basic-form": {
+   "url": "/aniimo/gachapus/",
+   "name": "Gachapus",
+   "number": 91,
+   "element": "water",
+   "elements": [
+    "water"
+   ],
+   "role": "DPS",
+   "description": "Aniimo Gachapus is a Water-element Aniimo that deals damage.",
+   "stats": {
+    "total": 529,
+    "hp": 106,
+    "atk": 121,
+    "pdef": 68,
+    "mdef": 77,
+    "regen": 106,
+    "break": 51
+   },
+   "imageId": "10623",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10621",
+    "10623"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "Crescent Bay"
+   ],
+   "trait": {
+    "name": "Gachapon",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Clearance Sale",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "40",
+     "power": "124"
+    },
+    {
+     "name": "Rigged Odds",
+     "desc": "1s",
+     "type": "",
+     "cost": "10",
+     "power": ""
+    },
+    {
+     "name": "Enhanced Bubble",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "43"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Super Jackpot",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "183"
+    },
+    {
+     "name": "Gachapon",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10583": {
+  "basic-form": {
+   "url": "/aniimo/glameep/",
+   "name": "Glameep",
+   "number": 89,
+   "element": "grass",
+   "elements": [
+    "grass",
+    "water"
+   ],
+   "role": "Heal",
+   "description": "Aniimo Glameep is a Grass and Water-element Aniimo that restores health to the team.",
+   "stats": {
+    "total": 550,
+    "hp": 122,
+    "atk": 100,
+    "pdef": 92,
+    "mdef": 89,
+    "regen": 97,
+    "break": 50
+   },
+   "imageId": "10583",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10581",
+    "10583"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [],
+   "trait": {
+    "name": "Bubble Energy",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Baa-Baa Leaf Shot",
+     "desc": "18s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "20"
+    },
+    {
+     "name": "Baa-Baa Sweetbubb",
+     "desc": "10s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "50"
+    },
+    {
+     "name": "Baa-Baa Darkbubb",
+     "desc": "10s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "50"
+    },
+    {
+     "name": "Baa-Baa Healbubb",
+     "desc": "20s",
+     "type": "",
+     "cost": "15",
+     "power": ""
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Leafwave Bubble",
+     "desc": "20s",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10421": {
+  "basic-form": {
+   "url": "/aniimo/malangel/",
+   "name": "Malangel",
+   "number": 92,
+   "element": "ice",
+   "elements": [
+    "ice"
+   ],
+   "role": "DPS",
+   "description": "Aniimo Malangel is a Ice-element Aniimo that deals damage.",
+   "stats": {
+    "total": 515,
+    "hp": 100,
+    "atk": 105,
+    "pdef": 80,
+    "mdef": 80,
+    "regen": 100,
+    "break": 50
+   },
+   "imageId": "10421",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10421",
+    "10423"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "Crescent Bay"
+   ],
+   "trait": {
+    "name": "Bloodthirst",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Wild Dance",
+     "desc": "1 break",
+     "type": "",
+     "cost": "10",
+     "power": "33"
+    },
+    {
+     "name": "Demon Steps",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "13"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Bloodthirst",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10423": {
+  "basic-form": {
+   "url": "/aniimo/malevsera/",
+   "name": "Malevsera",
+   "number": 93,
+   "element": "ice",
+   "elements": [
+    "ice"
+   ],
+   "role": "DPS",
+   "description": "Aniimo Malevsera is a Ice-element Aniimo that deals damage.",
+   "stats": {
+    "total": 525,
+    "hp": 88,
+    "atk": 125,
+    "pdef": 70,
+    "mdef": 80,
+    "regen": 110,
+    "break": 52
+   },
+   "imageId": "10423",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10421",
+    "10423"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "The Lost Islets and Crescent Bay"
+   ],
+   "trait": {
+    "name": "Bloodthirst",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Demonic State",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "65"
+    },
+    {
+     "name": "Wild Dance",
+     "desc": "1 break",
+     "type": "",
+     "cost": "10",
+     "power": "33"
+    },
+    {
+     "name": "Demon Steps",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "13"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Ashfrost Judgment",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "154"
+    },
+    {
+     "name": "Bloodthirst",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10621": {
+  "basic-form": {
+   "url": "/aniimo/popapus/",
+   "name": "Popapus",
+   "number": 90,
+   "element": "water",
+   "elements": [
+    "water"
+   ],
+   "role": "DPS",
+   "description": "Aniimo Popapus is a Water-element Aniimo that deals damage.",
+   "stats": {
+    "total": 450,
+    "hp": 90,
+    "atk": 102,
+    "pdef": 58,
+    "mdef": 65,
+    "regen": 90,
+    "break": 45
+   },
+   "imageId": "10621",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10621",
+    "10623"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "Crescent Bay"
+   ],
+   "trait": {
+    "name": "Gachapon",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Rigged Odds",
+     "desc": "1s",
+     "type": "",
+     "cost": "10",
+     "power": ""
+    },
+    {
+     "name": "Clearance Sale",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "40",
+     "power": "124"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Gachapon",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10381": {
+  "basic-form": {
+   "url": "/aniimo/reefish/",
+   "name": "Reefish",
+   "number": 84,
+   "element": "rock",
+   "elements": [
+    "rock",
+    "water"
+   ],
+   "role": "Regen",
+   "description": "Aniimo Reefish is a Rock and Water-element Aniimo that keeps energy flowing.",
+   "stats": {
+    "total": 486,
+    "hp": 83,
+    "atk": 66,
+    "pdef": 75,
+    "mdef": 79,
+    "regen": 92,
+    "break": 91
+   },
+   "imageId": "10381",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10381",
+    "10383"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "Crescent Bay"
+   ],
+   "trait": {
+    "name": "Overcharged Coral",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Coral Trap",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "67"
+    },
+    {
+     "name": "Quicksand Slam",
+     "desc": "10s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "28"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Overcharged Coral",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10363": {
+  "basic-form": {
+   "url": "/aniimo/soleon/",
+   "name": "Soleon",
+   "number": 900,
+   "element": "holy",
+   "elements": [
+    "holy"
+   ],
+   "role": "DPS",
+   "description": "Aniimo Soleon is a Holy-element Aniimo that deals damage.",
+   "stats": {
+    "total": 504,
+    "hp": 90,
+    "atk": 116,
+    "pdef": 65,
+    "mdef": 65,
+    "regen": 83,
+    "break": 85
+   },
+   "imageId": "10363",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "trait": null,
+   "skills": [
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Light Bombardment",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "62"
+    },
+    {
+     "name": "Holy Roar",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "Holy Storm",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "60"
+    },
+    {
+     "name": "Sun-Kissed",
+     "desc": "18s",
+     "type": "",
+     "cost": "",
+     "power": ""
+    },
+    {
+     "name": "Helios' Judgment",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "167"
+    }
+   ],
+   "resonance": []
+  }
+ },
+ "10463": {
+  "basic-form": {
+   "url": "/aniimo/wavwal/",
+   "name": "Wavwal",
+   "number": 87,
+   "element": "ice",
+   "elements": [
+    "ice"
+   ],
+   "role": "Break",
+   "description": "Aniimo Wavwal is a Ice-element Aniimo that breaks enemy guard.",
+   "stats": {
+    "total": 575,
+    "hp": 105,
+    "atk": 75,
+    "pdef": 89,
+    "mdef": 93,
+    "regen": 103,
+    "break": 110
+   },
+   "imageId": "10463",
+   "forms": [
+    "basic-form"
+   ],
+   "evolutionHeads": [
+    "10461",
+    "10463"
+   ],
+   "evolutionStages": [
+    "Lumin Stage",
+    "Gamma Stage"
+   ],
+   "habitats": [
+    "Crescent Bay"
+   ],
+   "trait": {
+    "name": "Hard Winter",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Ground Slam",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "45"
+    },
+    {
+     "name": "Sand Rush",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "10",
+     "power": "45"
+    },
+    {
+     "name": "Wave Surge",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "67"
+    },
+    {
+     "name": "Icebreaker",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "10",
+     "power": "45"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Aurora Protection",
+     "desc": "20s",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
+  }
+ }
+}

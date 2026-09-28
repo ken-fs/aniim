@@ -19,10 +19,11 @@ export const metadata: Metadata = {
 const NAV = [
   { href: "/dex/", label: "Aniimo Dex" },
   { href: "/tier-list/", label: "Tier List" },
+  { href: "/type-chart/", label: "Type Chart" },
+  { href: "/items/", label: "Items" },
   { href: "/codes/", label: "Codes" },
   { href: "/map/", label: "Map" },
   { href: "/catch-calculator/", label: "Calculator" },
-  { href: "/elements/", label: "Elements" },
   { href: "/guides/", label: "Guides" },
 ];
 
@@ -67,6 +68,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="mt-2 space-y-1 text-sm text-ink-soft">
                 <li><Link href="/dex/">Aniimo Dex</Link></li>
                 <li><Link href="/map/">Interactive Map</Link></li>
+                <li><Link href="/type-chart/">Type Chart</Link></li>
+                <li><Link href="/items/">Items Database</Link></li>
                 <li><Link href="/elements/">Elements</Link></li>
                 <li><Link href="/habitats/">Habitats</Link></li>
                 <li><Link href="/tier-list/">Tier List</Link></li>

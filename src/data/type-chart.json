@@ -1,0 +1,184 @@
+{
+ "dark": {
+  "strong": [
+   "grass",
+   "electric",
+   "holy"
+  ],
+  "weak": [
+   "water",
+   "wind"
+  ],
+  "takes_more": [
+   "wind",
+   "holy"
+  ],
+  "takes_less": [
+   "rock"
+  ]
+ },
+ "wind": {
+  "strong": [
+   "grass",
+   "dark"
+  ],
+  "weak": [
+   "electric",
+   "wind"
+  ],
+  "takes_more": [
+   "electric",
+   "holy"
+  ],
+  "takes_less": [
+   "wind",
+   "dark"
+  ]
+ },
+ "rock": {
+  "strong": [
+   "fire",
+   "ice"
+  ],
+  "weak": [
+   "water",
+   "grass",
+   "rock",
+   "dark"
+  ],
+  "takes_more": [
+   "water",
+   "grass"
+  ],
+  "takes_less": [
+   "fire",
+   "electric",
+   "ice",
+   "rock"
+  ]
+ },
+ "electric": {
+  "strong": [
+   "water",
+   "wind"
+  ],
+  "weak": [
+   "electric",
+   "ice",
+   "rock"
+  ],
+  "takes_more": [
+   "ice",
+   "dark"
+  ],
+  "takes_less": [
+   "electric",
+   "wind",
+   "holy"
+  ]
+ },
+ "holy": {
+  "strong": [
+   "wind",
+   "dark"
+  ],
+  "weak": [
+   "electric",
+   "holy"
+  ],
+  "takes_more": [
+   "dark"
+  ],
+  "takes_less": [
+   "fire",
+   "water",
+   "grass",
+   "holy"
+  ]
+ },
+ "fire": {
+  "strong": [
+   "grass",
+   "ice"
+  ],
+  "weak": [
+   "fire",
+   "water",
+   "rock",
+   "holy"
+  ],
+  "takes_more": [
+   "water",
+   "rock"
+  ],
+  "takes_less": [
+   "fire",
+   "grass",
+   "ice"
+  ]
+ },
+ "ice": {
+  "strong": [
+   "water",
+   "electric"
+  ],
+  "weak": [
+   "fire",
+   "ice",
+   "rock"
+  ],
+  "takes_more": [
+   "fire",
+   "rock"
+  ],
+  "takes_less": [
+   "water",
+   "electric",
+   "ice"
+  ]
+ },
+ "water": {
+  "strong": [
+   "fire",
+   "rock"
+  ],
+  "weak": [
+   "water",
+   "grass",
+   "ice",
+   "holy"
+  ],
+  "takes_more": [
+   "grass",
+   "electric",
+   "ice"
+  ],
+  "takes_less": [
+   "fire",
+   "water",
+   "rock",
+   "dark"
+  ]
+ },
+ "grass": {
+  "strong": [
+   "water",
+   "rock"
+  ],
+  "weak": [
+   "fire",
+   "grass",
+   "holy"
+  ],
+  "takes_more": [
+   "fire",
+   "wind",
+   "dark"
+  ],
+  "takes_less": [
+   "water",
+   "grass",
+   "rock"
+  ]
+ }
+}
