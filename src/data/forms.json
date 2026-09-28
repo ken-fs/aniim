@@ -1183,6 +1183,95 @@
     "1005300_Skill_10800280_Icon.png",
     "1036100_Skill_9400107_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/003/umbrabow-form",
+   "name": "Scorchhowl",
+   "number": 3,
+   "element": "fire",
+   "elements": [
+    "fire"
+   ],
+   "role": "DPS",
+   "description": "Umbrabow Scorchhowl — the Umbra-touched variant form.",
+   "stats": {
+    "total": 495,
+    "hp": 90,
+    "atk": 115,
+    "pdef": 80,
+    "mdef": 70,
+    "regen": 90,
+    "break": 50
+   },
+   "imageId": "1005305",
+   "forms": [
+    "basic-form",
+    "highland-form",
+    "mountain-woods-form",
+    "prismana-form",
+    "thunderstorm-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Scorching Flames",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Fire Kick",
+     "desc": "15s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "72"
+    },
+    {
+     "name": "Pebble Kick",
+     "desc": "15s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "72"
+    },
+    {
+     "name": "Burn Breaker",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "30",
+     "power": "88"
+    },
+    {
+     "name": "Lightning Kick",
+     "desc": "15s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "72"
+    },
+    {
+     "name": "Fire Bolt",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Falling Star",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "170"
+    }
+   ],
+   "resonance": []
   }
  },
  "004": {
@@ -1811,6 +1900,94 @@
     "1001200_Skill_11100070_Icon.png",
     "1003200_Skill_11200000_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/006/umbrabow-form",
+   "name": "Stellarys",
+   "number": 6,
+   "element": "dark",
+   "elements": [
+    "dark",
+    "ice"
+   ],
+   "role": "DPS",
+   "description": "Umbrabow Stellarys — the Umbra-touched variant form.",
+   "stats": {
+    "total": 485,
+    "hp": 90,
+    "atk": 125,
+    "pdef": 63,
+    "mdef": 67,
+    "regen": 90,
+    "break": 50
+   },
+   "imageId": "1001203",
+   "forms": [
+    "basic-form",
+    "prismana-form",
+    "rainstorm-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Grand Sorcerer",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Shadow Magic",
+     "desc": "1s",
+     "type": "",
+     "cost": "20",
+     "power": ""
+    },
+    {
+     "name": "Chill Glide",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "74"
+    },
+    {
+     "name": "Shooting Star Glide",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "74"
+    },
+    {
+     "name": "Shooting Stars",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "40"
+    },
+    {
+     "name": "Aquatic Glide",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "74"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Comet Aureus",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "166"
+    }
+   ],
+   "resonance": []
   }
  },
  "007": {
@@ -3019,6 +3196,95 @@
     "1018500_Skill_10900390_Icon.png",
     "1026200_Skill_14400000_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/009/umbrabow-form",
+   "name": "Cornet",
+   "number": 9,
+   "element": "wind",
+   "elements": [
+    "wind",
+    "electric"
+   ],
+   "role": "DPS",
+   "description": "Umbrabow Cornet — the Umbra-touched variant form.",
+   "stats": {
+    "total": 489,
+    "hp": 93,
+    "atk": 121,
+    "pdef": 66,
+    "mdef": 65,
+    "regen": 94,
+    "break": 50
+   },
+   "imageId": "1018504",
+   "forms": [
+    "basic-form",
+    "beach-form",
+    "highland-form",
+    "prismana-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Air Superiority",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Lightning Splitter",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "Wind Bomb Rush",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "45",
+     "power": "157"
+    },
+    {
+     "name": "Tornado",
+     "desc": "15s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "59"
+    },
+    {
+     "name": "Scream Splitter",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "Water Tornado",
+     "desc": "15s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "59"
+    },
+    {
+     "name": "Leaf Tornado",
+     "desc": "15s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "59"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    }
+   ],
+   "resonance": []
   }
  },
  "010": {
@@ -6845,6 +7111,96 @@
     "1026200_Skill_14400000_Icon.png",
     "1026201_Skill_9400130_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/018/umbrabow-form",
+   "name": "Turbo",
+   "number": 18,
+   "element": "wind",
+   "elements": [
+    "wind",
+    "dark"
+   ],
+   "role": "Support",
+   "description": "Umbrabow Turbo — the Umbra-touched variant form.",
+   "stats": {
+    "total": 520,
+    "hp": 95,
+    "atk": 90,
+    "pdef": 80,
+    "mdef": 96,
+    "regen": 109,
+    "break": 50
+   },
+   "imageId": "1026206",
+   "forms": [
+    "basic-form",
+    "cloudmist-form",
+    "plateau-form",
+    "prismana-form",
+    "rainstorm-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Shrouded in Mist",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Nimbi Burst",
+     "desc": "18s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "Nebula Burst",
+     "desc": "18s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "Cloud Orb",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "Thunder Bolt",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "Cloud Shield",
+     "desc": "20s",
+     "type": "",
+     "cost": "20",
+     "power": ""
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Collectible Drop",
+     "desc": "8s",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
   }
  },
  "019": {
@@ -7488,6 +7844,94 @@
     "1020300_Skill_11200193_Icon.png",
     "1020300_Skill_11200230_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/021/umbrabow-form",
+   "name": "Witchin",
+   "number": 21,
+   "element": "dark",
+   "elements": [
+    "dark",
+    "grass"
+   ],
+   "role": "Regen",
+   "description": "Umbrabow Witchin — the Umbra-touched variant form.",
+   "stats": {
+    "total": 530,
+    "hp": 115,
+    "atk": 80,
+    "pdef": 80,
+    "mdef": 90,
+    "regen": 115,
+    "break": 50
+   },
+   "imageId": "1020304",
+   "forms": [
+    "basic-form",
+    "mountain-form",
+    "prismana-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Prank",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Malice Burst",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "68"
+    },
+    {
+     "name": "Euphoric Sonic Blast",
+     "desc": "18s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "30"
+    },
+    {
+     "name": "Shard Impact",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "67"
+    },
+    {
+     "name": "Black Hole Domain",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "54"
+    },
+    {
+     "name": "Oozing Malice",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "68"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Annihilation Bomb",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
   }
  },
  "022": {
@@ -11232,6 +11676,95 @@
     "1032300_Skill_10600410_Icon.png",
     "1032400_Skill_14200000_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/034/umbrabow-form",
+   "name": "Thornblade",
+   "number": 34,
+   "element": "grass",
+   "elements": [
+    "grass",
+    "water"
+   ],
+   "role": "DPS",
+   "description": "Umbrabow Thornblade — the Umbra-touched variant form.",
+   "stats": {
+    "total": 499,
+    "hp": 96,
+    "atk": 121,
+    "pdef": 70,
+    "mdef": 70,
+    "regen": 92,
+    "break": 50
+   },
+   "imageId": "1032304",
+   "forms": [
+    "basic-form",
+    "prismana-form",
+    "thunderstorm-form",
+    "towerwood-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Sword Dance",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Thorny Defense",
+     "desc": "6s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "75"
+    },
+    {
+     "name": "Aqua Defense",
+     "desc": "6s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "75"
+    },
+    {
+     "name": "Thorny Impact",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "57"
+    },
+    {
+     "name": "Lightning Impact",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "57"
+    },
+    {
+     "name": "Thorny Rain",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "30"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Elegant Waltz",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
   }
  },
  "035": {
@@ -13170,6 +13703,95 @@
     "1003200_Skill_11200040_Icon.png",
     "1003200_Skill_9400062_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/041/umbrabow-form",
+   "name": "Ignitis",
+   "number": 41,
+   "element": "dark",
+   "elements": [
+    "dark",
+    "fire"
+   ],
+   "role": "DPS",
+   "description": "Umbrabow Ignitis — the Umbra-touched variant form.",
+   "stats": {
+    "total": 492,
+    "hp": 90,
+    "atk": 128,
+    "pdef": 70,
+    "mdef": 63,
+    "regen": 91,
+    "break": 50
+   },
+   "imageId": "1003204",
+   "forms": [
+    "basic-form",
+    "forest-form",
+    "highland-form",
+    "prismana-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Battle Fervor",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Dark Soul",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "50"
+    },
+    {
+     "name": "Fire Dash",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "25"
+    },
+    {
+     "name": "Dark Dash",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "25"
+    },
+    {
+     "name": "Scythe Dance",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "60"
+    },
+    {
+     "name": "Forest Whirl",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "60"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Dimension Rupture",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
   }
  },
  "042": {
@@ -14409,6 +15031,87 @@
     "1022200_Skill_10400220_Icon.png",
     "1022200_Skill_11200170_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/046/umbrabow-form",
+   "name": "Blazen",
+   "number": 46,
+   "element": "electric",
+   "elements": [
+    "electric",
+    "dark"
+   ],
+   "role": "Break",
+   "description": "Umbrabow Blazen — the Umbra-touched variant form.",
+   "stats": {
+    "total": 530,
+    "hp": 100,
+    "atk": 100,
+    "pdef": 70,
+    "mdef": 70,
+    "regen": 86,
+    "break": 104
+   },
+   "imageId": "1022203",
+   "forms": [
+    "basic-form",
+    "mountain-woods-form",
+    "prismana-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Power Sustain",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Lightning Cross",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "45"
+    },
+    {
+     "name": "Electrified Impact",
+     "desc": "1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "33"
+    },
+    {
+     "name": "Dark Claw",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "52"
+    },
+    {
+     "name": "Lightning Claw",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "20"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Lightning Flash",
+     "desc": "8s · 1.5 break",
+     "type": "",
+     "cost": "",
+     "power": "135"
+    }
+   ],
+   "resonance": []
   }
  },
  "047": {
@@ -15969,6 +16672,94 @@
     "1019400_Skill_10400270_Icon.png",
     "1019400_Skill_11300110_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/055/umbrabow-form",
+   "name": "Sherro",
+   "number": 55,
+   "element": "water",
+   "elements": [
+    "water",
+    "holy"
+   ],
+   "role": "DPS",
+   "description": "Umbrabow Sherro — the Umbra-touched variant form.",
+   "stats": {
+    "total": 509,
+    "hp": 100,
+    "atk": 121,
+    "pdef": 75,
+    "mdef": 75,
+    "regen": 88,
+    "break": 50
+   },
+   "imageId": "1019405",
+   "forms": [
+    "basic-form",
+    "prismana-form",
+    "thunderstorm-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Tidal Heart",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Flowing Water Slash",
+     "desc": "5s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "61"
+    },
+    {
+     "name": "Prismana Slam",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "47"
+    },
+    {
+     "name": "Torrent Slam",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "47"
+    },
+    {
+     "name": "Thunder Slam",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "47"
+    },
+    {
+     "name": "Hydro Roll",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "30",
+     "power": "19"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Torrent Blade",
+     "desc": "",
+     "type": "",
+     "cost": "",
+     "power": ""
+    }
+   ],
+   "resonance": []
   }
  },
  "056": {
@@ -17742,6 +18533,87 @@
     "1002602_Skill_9400041_Icon.png",
     "1003200_Skill_11200000_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/062/umbrabow-form",
+   "name": "Pawney",
+   "number": 62,
+   "element": "dark",
+   "elements": [
+    "dark"
+   ],
+   "role": "DPS",
+   "description": "Umbrabow Pawney — the Umbra-touched variant form.",
+   "stats": {
+    "total": 512,
+    "hp": 90,
+    "atk": 128,
+    "pdef": 89,
+    "mdef": 70,
+    "regen": 80,
+    "break": 55
+   },
+   "imageId": "1002604",
+   "forms": [
+    "basic-form",
+    "mountain-woods-form",
+    "prismana-form",
+    "snowfield-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Pursuit",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Weakening Smash",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "15",
+     "power": "45"
+    },
+    {
+     "name": "Elastic Sword",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "62"
+    },
+    {
+     "name": "Shadow Cut",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "85"
+    },
+    {
+     "name": "Weakening Slam",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "15",
+     "power": "45"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Ironclad Armament",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "220"
+    }
+   ],
+   "resonance": []
   }
  },
  "063": {
@@ -19531,6 +20403,86 @@
     "1028300_Skill_11200470_Icon.png",
     "1036100_Skill_9400107_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/072/umbrabow-form",
+   "name": "Magmarex",
+   "number": 72,
+   "element": "fire",
+   "elements": [
+    "fire",
+    "dark"
+   ],
+   "role": "Break",
+   "description": "Umbrabow Magmarex — the Umbra-touched variant form.",
+   "stats": {
+    "total": 549,
+    "hp": 110,
+    "atk": 91,
+    "pdef": 70,
+    "mdef": 99,
+    "regen": 75,
+    "break": 104
+   },
+   "imageId": "1028303",
+   "forms": [
+    "basic-form",
+    "prismana-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Pyro Charge",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Lava Punch",
+     "desc": "1s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "67"
+    },
+    {
+     "name": "Magma Surge",
+     "desc": "5s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "53"
+    },
+    {
+     "name": "Dark Energy Surge",
+     "desc": "5s · 1.5 break",
+     "type": "",
+     "cost": "20",
+     "power": "53"
+    },
+    {
+     "name": "Lava Breath",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "62"
+    },
+    {
+     "name": "ATK",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Burning Sun",
+     "desc": "8s · 1.5 break",
+     "type": "",
+     "cost": "",
+     "power": "150"
+    }
+   ],
+   "resonance": []
   }
  },
  "073": {
@@ -20423,6 +21375,87 @@
     "1014300_Skill_14000000_Icon.png",
     "1014302_Skill_9400023_Icon.png"
    ]
+  },
+  "umbrabow-form": {
+   "url": "/item/079/umbrabow-form",
+   "name": "Luminelle",
+   "number": 79,
+   "element": "electric",
+   "elements": [
+    "electric",
+    "holy"
+   ],
+   "role": "Support",
+   "description": "Umbrabow Luminelle — the Umbra-touched variant form.",
+   "stats": {
+    "total": 540,
+    "hp": 110,
+    "atk": 90,
+    "pdef": 85,
+    "mdef": 85,
+    "regen": 120,
+    "break": 50
+   },
+   "imageId": "1014303",
+   "forms": [
+    "basic-form",
+    "prismana-form",
+    "rainstorm-form",
+    "umbrabow-form"
+   ],
+   "evolutionHeads": [],
+   "evolutionStages": [],
+   "habitats": [],
+   "mobility": null,
+   "trait": {
+    "name": "Arc Surge",
+    "desc": ""
+   },
+   "skills": [
+    {
+     "name": "Healing Impact",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "20"
+    },
+    {
+     "name": "Swift Retreat",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "20",
+     "power": "53"
+    },
+    {
+     "name": "Water Rush",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "20"
+    },
+    {
+     "name": "Lightning Discharge",
+     "desc": "1s · 1 break",
+     "type": "",
+     "cost": "10",
+     "power": "20"
+    },
+    {
+     "name": "Spotlight Moment",
+     "desc": "0.1s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "6"
+    },
+    {
+     "name": "Self-Destruction",
+     "desc": "8s · 1 break",
+     "type": "",
+     "cost": "",
+     "power": "80"
+    }
+   ],
+   "resonance": []
   }
  },
  "080": {
