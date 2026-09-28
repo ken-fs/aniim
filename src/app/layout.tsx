@@ -53,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </nav>
         </header>
         <main className="flex-1">{children}</main>
+        <AnalyticsConsent />
         <footer className="border-t border-line bg-card">
           <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-10 md:grid-cols-4">
             <div>
