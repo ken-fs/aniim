@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import codesData from "@/data/codes.json";
 import { CopyCode } from "./copy-code";
+import { AdsterraBanner } from "@/components/adsterra-banner";
+import { LEADERBOARD, RECTANGLE } from "@/lib/ads";
 
 const ACTIVE_COUNT = codesData.codes.filter((c) => c.status === "active").length;
 
@@ -51,6 +53,7 @@ export default function CodesPage() {
         <strong>{codesData.checked}</strong> · <strong>{active.length} live</strong>.
       </p>
 
+      <AdsterraBanner slot={LEADERBOARD} className="mt-6 hidden md:flex" />
       <div className="mt-6 space-y-2">
         {active.map((c) => (
           <div key={c.code} className="flex flex-wrap items-center gap-3 rounded-2xl border border-line bg-card px-4 py-3">
@@ -77,6 +80,8 @@ export default function CodesPage() {
           </div>
         </section>
       )}
+
+      <AdsterraBanner slot={RECTANGLE} className="mt-8" />
 
       <section className="mt-10">
         <h2 className="font-display text-2xl font-bold">How to redeem codes in Aniimo</h2>

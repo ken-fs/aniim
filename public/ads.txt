@@ -1,0 +1,4 @@
+# ads.txt — authorized digital sellers.
+#
+# Adsterra — paste the ads.txt record from the Adsterra dashboard for aniim.org here.
+# (Dashboard → Sites → aniim.org → ads.txt)

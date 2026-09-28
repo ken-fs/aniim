@@ -5,6 +5,8 @@ import { creatures, creatureBySlug, formLabel } from "@/lib/creatures";
 import { ElementChip, RoleChip, SectionTitle } from "@/components/ui";
 import { regionSlug } from "@/lib/forms-meta";
 import { FormViewer } from "./form-viewer";
+import { AdsterraBanner } from "@/components/adsterra-banner";
+import { RECTANGLE } from "@/lib/ads";
 
 export function generateStaticParams() {
   return creatures.map((c) => ({ slug: c.slug }));
@@ -75,6 +77,8 @@ export default async function CreaturePage({ params }: { params: Promise<{ slug:
       <section className="mt-6">
         <FormViewer creature={c} />
       </section>
+
+      <AdsterraBanner slot={RECTANGLE} className="mt-8" />
 
       {/* 栖息地 */}
       {c.base.habitats?.length ? (

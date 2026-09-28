@@ -4,6 +4,8 @@ import { creatures, elements, roles } from "@/lib/creatures";
 import { CreatureCard, SectionTitle } from "@/components/ui";
 import { site } from "@/lib/site";
 import codes from "@/data/codes.json";
+import { AdsterraBanner } from "@/components/adsterra-banner";
+import { LEADERBOARD, RECTANGLE } from "@/lib/ads";
 
 export const metadata: Metadata = {
   title: "Aniimo Wiki & Database — Dex, Tier List, Codes & Guides",
@@ -72,6 +74,9 @@ export default function Home() {
         ))}
       </section>
 
+      {/* 广告:桌面横幅 */}
+      <AdsterraBanner slot={LEADERBOARD} className="mt-10 hidden md:flex" />
+
       {/* 强力生物 */}
       <section className="py-12">
         <SectionTitle sub="Ranked by official base stat total">Strongest Aniimo at launch</SectionTitle>
@@ -121,6 +126,8 @@ export default function Home() {
           <p className="mt-1 text-sm text-ink-soft">Where every Aniimo spawns — browse creatures by region across Idyll.</p>
         </Link>
       </section>
+
+      <AdsterraBanner slot={RECTANGLE} className="mt-4" />
 
       {/* 元素速览 */}
       <section className="pb-14">

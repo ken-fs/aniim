@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { creatures, elements, roles } from "@/lib/creatures";
 import { DexBrowser } from "./dex-browser";
+import { AdsterraBanner } from "@/components/adsterra-banner";
+import { RECTANGLE } from "@/lib/ads";
 
 export const metadata: Metadata = {
   title: `Aniimo Dex — All ${creatures.length} Aniimo with Stats & Forms`,
@@ -21,6 +23,7 @@ export default function DexPage() {
         Click a creature for skills, evolutions, forms and habitats.
       </p>
       <DexBrowser creatures={slim} elements={elements} roles={roles} />
+      <AdsterraBanner slot={RECTANGLE} className="mt-10" />
     </div>
   );
 }
