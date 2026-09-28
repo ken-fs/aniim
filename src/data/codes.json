@@ -1,0 +1,25 @@
+{
+ "checked": "2026-09-28",
+ "source": "community-reported (aniidex.com), verified against official channels",
+ "redeem": [
+  "Open the menu at the left of the screen, choose Settings, then the Account tab.",
+  "Press the Gift Code Redemption button on the first row.",
+  "Type or paste the code into “Enter redeem code” and confirm.",
+  "Rewards arrive via in-game Mailbox."
+ ],
+ "codes": [
+  {"code":"aniimazingfroyo","rewards":"20 Glimmer (legendary currency)","added":"2026-09-25","status":"active","region":"US only"},
+  {"code":"aniimonow","rewards":"10,000 Credits + 3 Growth Flower","added":"2026-09-25","status":"active"},
+  {"code":"anythinganiimo","rewards":"10,000 Credits + 3 Growth Flower","added":"2026-09-25","status":"active"},
+  {"code":"anywhereaniimo","rewards":"10,000 Credits + 3 Growth Flower","added":"2026-09-25","status":"active"},
+  {"code":"aniimofreetoplay","rewards":"50 Glimmer + 5 Growth Flower + 5 Aniipod Pro","added":"2026-09-24","status":"active"},
+  {"code":"aniimoidyll","rewards":"10,000 Credits + 5 Aniipod","added":"2026-09-21","status":"active"},
+  {"code":"aniimotogether","rewards":"3 Growth Flower + 10,000 Credits","added":"2026-09-21","status":"active"},
+  {"code":"aniimowelcome","rewards":"50 Glimmer + 5 Aniipod Pro + 5 Growth Flower","added":"2026-09-18","status":"active"},
+  {"code":"twinewithaniimo","rewards":"50 Glimmer + 5 Aniipod Pro + 5 Growth Flower","added":"2026-09-18","status":"active"},
+  {"code":"anyoneaniimo","rewards":"5 Aniipod + 10,000 Credits","added":"2026-09-18","status":"active"},
+  {"code":"aniimoopenworld","rewards":"5 Aniipod + 10,000 Credits","added":"2026-09-18","status":"active"},
+  {"code":"aniimolaunch2026","rewards":"5 Aniipod + 10,000 Credits","added":"2026-09-18","status":"active"},
+  {"code":"aniimobonus","rewards":"50 Glimmer + 5 Growth Flower + 5 Aniipod Pro","added":"2026-09-18","status":"active"}
+ ]
+}

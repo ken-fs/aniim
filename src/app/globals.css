@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* 纸感亮色系 —— 与暗色霓虹竞品反向走 */
+  --color-paper: #f7f4ee;
+  --color-card: #fffdfa;
+  --color-ink: #22201c;
+  --color-ink-soft: #6b675f;
+  --color-line: #e7e2d8;
+  --color-brand: #e8590c;
+  --color-brand-soft: #fff0e5;
+
+  /* 元素色 */
+  --color-el-fire: #e0440e;
+  --color-el-water: #1971c2;
+  --color-el-flora: #2f9e44;
+  --color-el-volt: #f08c00;
+  --color-el-frost: #1098ad;
+  --color-el-terra: #a0774a;
+  --color-el-gale: #667eea;
+  --color-el-umbra: #7048e8;
+  --color-el-lumen: #e8b90e;
+  --color-el-neutral: #868e96;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* 卡片 hover */
+.dex-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.dex-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px -12px rgb(34 32 28 / 0.25);
+}
+
+/* 属性条 */
+.stat-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: rgb(34 32 28 / 0.08);
+  overflow: hidden;
+}
+.stat-bar > div {
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* 元素 chip 颜色映射 */
+.el-chip {
+  --el: var(--color-el-neutral);
+  background: color-mix(in oklab, var(--el) 14%, white);
+  color: var(--el);
+  border: 1px solid color-mix(in oklab, var(--el) 30%, white);
+}
