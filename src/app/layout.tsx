@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: site.title, template: `%s — ${site.name}` },
   description: site.description,
-  openGraph: { siteName: site.name, type: "website", images: [{ url: "/og.png", width: 1200, height: 630 }] },
+  openGraph: { siteName: site.name, type: "website", images: [{ url: "/images/og.png", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" },
 };
 
