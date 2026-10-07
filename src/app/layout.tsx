@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Bricolage_Grotesque, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { site } from "@/lib/site";
 import { AnalyticsConsent } from "@/components/analytics-consent";
 import "./globals.css";
 
-const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
-const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
+// Fonts are self-hosted (src/fonts, OFL): next/font/google downloads them during the build, and a flaky download broke a Cloudflare build on 2026-10-06.
+const display = localFont({ src: "../fonts/bricolage-grotesque-latin-wght-normal.woff2", variable: "--font-display", weight: "200 800" });
+const inter = localFont({ src: "../fonts/inter-latin-wght-normal.woff2", variable: "--font-body", weight: "100 900" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
