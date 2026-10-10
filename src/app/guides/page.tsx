@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Aniimo Guides — Catch Rate, Starters, Evolution",
+  title: "Aniimo Guides — Catch Rate, Starters, Prismana & Egg Heist",
   description:
-    "Plain-English Aniimo guides: what to do first, why your catches keep failing, and whether evolving is worth it.",
+    "Plain-English Aniimo guides: what to do first, why your catches keep failing, every Prismana form, and how Operation: Egg Heist actually works.",
   alternates: { canonical: "/guides/" },
 };
 
@@ -20,6 +20,18 @@ const GUIDES = [
     title: "Why Do My Catches Keep Failing?",
     desc: "The catch formula in plain words. Level gap, HP, pods, backstab, Alphas — with the actual numbers.",
     tag: "Most useful",
+  },
+  {
+    href: "/guides/prismana/",
+    title: "Prismana Forms: All 27 & How to Hatch Them",
+    desc: "The rare forms — and the honest answer on whether they're worth chasing (they're not stronger).",
+    tag: "Collecting",
+  },
+  {
+    href: "/guides/egg-heist/",
+    title: "Operation: Egg Heist, Explained",
+    desc: "Rank ladder, Eggshell Coins, difficulty unlocks, free beginner rounds and the season reset rules.",
+    tag: "Mode guide",
   },
   {
     href: "/guides/evolution/",
