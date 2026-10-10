@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { creatures, creatureBySlug, formLabel } from "@/lib/creatures";
+import { items } from "@/lib/items";
 import { ElementChip, RoleChip, SectionTitle } from "@/components/ui";
 import { regionSlug } from "@/lib/forms-meta";
 import { FormViewer } from "./form-viewer";
@@ -34,6 +35,24 @@ export default async function CreaturePage({ params }: { params: Promise<{ slug:
 
   const related = creatures.filter((x) => x.slug !== c.slug && x.elements.some((e) => c.elements.includes(e))).slice(0, 8);
   const evoCount = c.base.evolutionStages.length;
+
+  // 获取方式:匹配蛋物品。词边界匹配(避免 "Iris" 命中 "Irisalis")
+  const esc = c.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const nameRe = new RegExp(`(?:^|[^a-z])${esc}(?:[^a-z]|$)`, "i");
+  const eggs = items.filter((i) => /(?:^| )Egg$/i.test(i.name) && nameRe.test(i.name)).slice(0, 8);
+
+  // 队伍搭配:角色归一(数据里 Break/BREAK 混用) + 基础属性排序
+  const roleKey = (r: string) => (/dps/i.test(r) ? "DPS" : /break/i.test(r) ? "BREAK" : "SUPPORT");
+  const ranked = creatures.filter((x) => x.slug !== c.slug).sort((a, b) => (b.base.stats.total ?? 0) - (a.base.stats.total ?? 0));
+  const topBy = (key: string, n = 3) => ranked.filter((x) => roleKey(x.role) === key).slice(0, n);
+  const mine = roleKey(c.role);
+  const partnerGroups =
+    mine === "DPS"
+      ? [{ label: "BREAK partners", list: topBy("BREAK") }, { label: "Support partners", list: topBy("SUPPORT") }]
+      : mine === "BREAK"
+        ? [{ label: "DPS partners", list: topBy("DPS") }, { label: "Support partners", list: topBy("SUPPORT") }]
+        : [{ label: "DPS partners", list: topBy("DPS") }, { label: "BREAK partners", list: topBy("BREAK") }];
+  const sameRole = ranked.filter((x) => roleKey(x.role) === mine).slice(0, 5);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -80,19 +99,49 @@ export default async function CreaturePage({ params }: { params: Promise<{ slug:
 
       <AdsterraBanner slot={RECTANGLE} className="mt-8" />
 
-      {/* 栖息地 */}
-      {c.base.habitats?.length ? (
-        <section className="mt-8">
-          <SectionTitle sub="Official spawn regions">Habitats</SectionTitle>
-          <div className="flex flex-wrap gap-2">
-            {c.base.habitats.map((h) => (
-              <Link key={h} href={`/map/?region=${regionSlug(h)}`} className="rounded-full border border-line bg-card px-4 py-1.5 text-sm font-medium hover:bg-black/5">
-                {h}
-              </Link>
-            ))}
+      {/* 获取方式 */}
+      <section className="mt-8">
+        <SectionTitle sub="Wild spawns, eggs and evolution">How to get {c.name}</SectionTitle>
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl border border-line bg-card p-5">
+            <h3 className="font-display text-lg font-bold">In the wild</h3>
+            {c.base.habitats?.length ? (
+              <>
+                <p className="mt-1 text-sm text-ink-soft">Official spawn regions for {c.name} — open the map to see the spots:</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {c.base.habitats.map((h) => (
+                    <Link key={h} href={`/map/?region=${regionSlug(h)}`} className="rounded-full border border-line bg-paper px-4 py-1.5 text-sm font-medium hover:bg-black/5">
+                      {h}
+                    </Link>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <p className="mt-1 text-sm text-ink-soft">No spawn region recorded for {c.name} in our data yet — it may come from eggs, evolution or a later-game area.</p>
+            )}
           </div>
-        </section>
-      ) : null}
+          <div className="rounded-2xl border border-line bg-card p-5">
+            <h3 className="font-display text-lg font-bold">Hatch from eggs</h3>
+            {eggs.length ? (
+              <>
+                <p className="mt-1 text-sm text-ink-soft">
+                  Eggs tied to {c.name} in the item database
+                  {eggs.some((e) => /^prismana/i.test(e.name)) ? " — Prismana eggs hatch the Prismana form" : ""}:
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {eggs.map((e) => (
+                    <Link key={e.slug} href={`/items/${e.slug}/`} className="rounded-full border border-line bg-paper px-4 py-1.5 text-sm font-medium hover:bg-black/5">
+                      {e.name}
+                    </Link>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <p className="mt-1 text-sm text-ink-soft">No {c.name}-specific egg in the item database — this one comes from catching it directly in the wild.</p>
+            )}
+          </div>
+        </div>
+      </section>
 
       {/* 进化链 */}
       {c.base.evolutionHeads.length > 0 && (
@@ -114,6 +163,44 @@ export default async function CreaturePage({ params }: { params: Promise<{ slug:
           </div>
         </section>
       )}
+
+      {/* 队伍搭配 */}
+      <section className="mt-10">
+        <SectionTitle sub="Base-stat picks — same method as the tier list">Best team with {c.name}</SectionTitle>
+        <p className="max-w-3xl text-ink-soft">
+          {c.name} fills the <strong>{c.role}</strong> slot. A comfortable team is one damage dealer, one BREAK and one
+          support — so the practical question is who covers the other two slots. These are the highest base-stat Aniimo
+          in each role right now:
+        </p>
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
+          {partnerGroups.map((g) => (
+            <div key={g.label} className="rounded-2xl border border-line bg-card p-5">
+              <h3 className="font-display text-base font-bold">{g.label}</h3>
+              <div className="mt-3 space-y-2">
+                {g.list.map((p) => (
+                  <Link key={p.slug} href={`/dex/${p.slug}/`} className="flex items-center gap-3 rounded-xl border border-line bg-paper px-3 py-2 hover:bg-black/5">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/images/creatures/${p.imageId}.webp`} alt={p.name} width={36} height={36} loading="lazy" className="h-9 w-9 object-contain" />
+                    <span className="text-sm font-semibold">{p.name}</span>
+                    <span className="ml-auto text-xs text-ink-soft">{p.role} · {p.base.stats.total ?? "—"}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        {sameRole.length > 1 && (
+          <p className="mt-4 text-sm text-ink-soft">
+            Prefer another {mine.toLowerCase()}? Highest-stat alternatives:{" "}
+            {sameRole.map((p, i) => (
+              <span key={p.slug}>
+                {i > 0 ? ", " : ""}
+                <Link href={`/dex/${p.slug}/`} className="font-semibold text-brand hover:underline">{p.name}</Link>
+              </span>
+            ))}
+          </p>
+        )}
+      </section>
 
       {/* 同元素 */}
       <section className="mt-10">
