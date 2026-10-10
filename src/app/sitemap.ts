@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { creatures } from "@/lib/creatures";
+import { items } from "@/lib/items";
 import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -10,5 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...pages.map((p) => ({ url: `${site.url}${p}`, lastModified: now, changeFrequency: (p === "/" || p === "/codes/" ? "daily" : "weekly") as "daily" | "weekly", priority: p === "/" ? 1 : 0.8 })),
     ...creatures.map((c) => ({ url: `${site.url}/dex/${c.slug}/`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.7 })),
+    ...items.map((i) => ({ url: `${site.url}/items/${i.slug}/`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.4 })),
   ];
 }

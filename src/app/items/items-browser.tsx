@@ -1,17 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { RARITY_STYLE } from "@/lib/items";
 
-interface Item { id: string; name: string; category: string; subcategory: string; rarity: string }
-
-const RARITY_STYLE: Record<string, string> = {
-  Common: "bg-slate-100 text-slate-600 border-slate-200",
-  Uncommon: "bg-green-50 text-green-700 border-green-200",
-  Rare: "bg-blue-50 text-blue-700 border-blue-200",
-  Epic: "bg-purple-50 text-purple-700 border-purple-200",
-  Legendary: "bg-amber-50 text-amber-700 border-amber-200",
-  Prismatic: "bg-teal-50 text-teal-700 border-teal-200",
-};
+interface Item { id: string; slug: string; name: string; category: string; subcategory: string; rarity: string }
 
 const PAGE = 120;
 
@@ -73,7 +65,7 @@ export function ItemsBrowser({ items, categories, rarities }: { items: Item[]; c
           <tbody>
             {shown.map((i) => (
               <tr key={i.id} className="border-b border-line/60 last:border-0 hover:bg-black/[0.02]">
-                <td className="px-4 py-2 font-medium">{i.name}</td>
+                <td className="px-4 py-2 font-medium"><a href={`/items/${i.slug}/`} className="hover:text-brand hover:underline">{i.name}</a></td>
                 <td className="px-4 py-2 text-ink-soft">{i.category}</td>
                 <td className="hidden px-4 py-2 text-ink-soft md:table-cell">{i.subcategory}</td>
                 <td className="px-4 py-2 text-right">
