@@ -12,8 +12,9 @@
 // petsuniverse.site) must NOT be reused here. Add aniim.org in the Adsterra
 // dashboard, create units, and paste their keys + src URLs below.
 //
-// NOTE: Adsterra also expects its ads.txt record in public/ads.txt (from the
-// dashboard). Without it, demand-side platforms cannot verify the inventory.
+// NOTE: Adsterra needs NO ads.txt record (user-confirmed 2026-10-11; the
+// dashboard has no such thing). public/ads.txt serves AdSense only - add the
+// pub-ID line after approval.
 
 export type AdSlot = {
   key: string;
