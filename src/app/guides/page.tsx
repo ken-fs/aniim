@@ -22,6 +22,12 @@ const GUIDES = [
     tag: "Most useful",
   },
   {
+    href: "/guides/probability-details/",
+    title: "Aniimo Probability Details, Explained",
+    desc: "Every official rate: lucky and superlucky pity, Vein Essence, Alpha held item drops and Sparkling odds.",
+    tag: "Odds",
+  },
+  {
     href: "/guides/prismana/",
     title: "Prismana Forms: All 27 & How to Hatch Them",
     desc: "The rare forms — and the honest answer on whether they're worth chasing (they're not stronger).",
@@ -46,6 +52,10 @@ export default function GuidesIndex() {
     <div className="mx-auto w-full max-w-4xl px-4 py-10">
       <h1 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">Aniimo Guides</h1>
       <p className="mt-2 text-ink-soft">Practical guides built from official data — no speculation, and every table can be verified in-game.</p>
+      <p className="mt-2 text-sm text-ink-soft">
+        Looking for one creature&apos;s stats, skills or habitat? Those live in the{" "}
+        <Link href="/dex/" className="font-semibold text-brand underline">Aniimo Dex</Link>, with every Aniimo on one page.
+      </p>
       <div className="mt-8 space-y-3">
         {GUIDES.map((g) => (
           <Link key={g.href} href={g.href} className="dex-card block rounded-2xl border border-line bg-card p-5">

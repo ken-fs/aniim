@@ -208,14 +208,14 @@
     },
     {
      "name": "Coral Trap",
-     "desc": "1s · 1 break",
+     "desc": "Creates a coral trap ahead for 5s. It deals damage to targets every second and applies 1 stack of Earth Debuff. (1s · 1 break)",
      "type": "",
      "cost": "20",
      "power": "67"
     },
     {
      "name": "Quicksand Slam",
-     "desc": "10s · 1 break",
+     "desc": "Creates quicksand ahead, dealing damage to targets and applying [Imprisonment]. (10s · 1 break)",
      "type": "",
      "cost": "20",
      "power": "28"
@@ -255,7 +255,7 @@
     "holy"
    ],
    "role": "DPS",
-   "description": "Aniimo Fennelun is a Holy-element Aniimo that deals damage.",
+   "description": "Fennelun is Lunara's evolved battle form. Lunara turns into Fennelun when she casts her Ultimate, Selene's Judgment, and stays that way until the fight ends with 15% more damage. It's a Holy (Light) DPS.",
    "stats": {
     "total": 504,
     "hp": 90,
@@ -274,7 +274,7 @@
    "habitats": [],
    "trait": {
     "name": "Lunar Power",
-    "desc": ""
+    "desc": "When not attacking with an advantageous element, final damage increases by 30%. Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals 100% extra damage, and restores 0.5% HP."
    },
    "skills": [
     {
@@ -742,7 +742,7 @@
     "water"
    ],
    "role": "Regen",
-   "description": "Aniimo Reefish is a Rock and Water-element Aniimo that keeps energy flowing.",
+   "description": "Reefish is a Rock and Water Aniimo in the Regen role, so it keeps your team's energy flowing. You'll find it in Crescent Bay, hiding in the sand dressed up as coral. It's the Lumin stage of its family and evolves into Coraliz at the Gamma stage.",
    "stats": {
     "total": 486,
     "hp": 83,
@@ -774,14 +774,14 @@
    "skills": [
     {
      "name": "Coral Trap",
-     "desc": "1s · 1 break",
+     "desc": "Creates a coral trap ahead for 5s. It deals damage to targets every second and applies 1 stack of Earth Debuff. (1s · 1 break)",
      "type": "",
      "cost": "20",
      "power": "67"
     },
     {
      "name": "Quicksand Slam",
-     "desc": "10s · 1 break",
+     "desc": "Creates quicksand ahead, dealing damage to targets and applying [Imprisonment]. (10s · 1 break)",
      "type": "",
      "cost": "20",
      "power": "28"

@@ -55,7 +55,8 @@ export default function PrismanaGuide() {
           specific one.
         </li>
         <li>
-          <strong>Bring a Sparkling Cube.</strong> Prismana egg text explicitly recommends using one. Sparkling is the
+          <strong>Bring a Sparkling Cube.</strong> Prismana egg text explicitly recommends using one (the style odds are in{" "}
+          <Link href="/guides/probability-details/" className="font-semibold text-brand underline">Probability Details</Link>). Sparkling is the
           mutation layer on top of the form — some eggs even guarantee a Prismana Form with a named mutation like{" "}
           <em>Shadow Sparkling</em>.
         </li>

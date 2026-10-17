@@ -190,14 +190,19 @@ export default function CatchChanceGuide() {
       <h2 className="font-display mt-10 text-2xl font-bold">Two bonus odds worth knowing</h2>
       <ul className="mt-3 space-y-2 text-ink-soft">
         <li>
-          <strong>Sparkling (shiny) chances:</strong> about 99% common style and 1% dazzling when you use a Sparkling
-          Cube out in the world. Eggs from Egg Heist can roll Shadow instead.
+          <strong>Sparkling (shiny) chances:</strong> ten normal styles at 9.9% each and 1% Dazzling when you use a
+          Sparkling Cube out in the world. Eggs from Egg Heist can roll Shadow instead.
         </li>
         <li>
-          <strong>Nurture:</strong> Vein Essence has a 3% chance to trigger Prismana Flow. You can also just pay 480
-          Prismatic Energy for a guaranteed trigger, and pity kicks in at 10,500 Prismana.
+          <strong>Nurture:</strong> Vein Essence has a 3% chance to trigger Prismana Flow directly. The official page
+          also lists 480 Prismatic Energy as a direct result, and pity kicks in at 10,500 Prismana.
         </li>
       </ul>
+      <p className="mt-3 text-sm text-ink-soft">
+        The same official page also has the lucky / superlucky pity, Alpha held item drops and Sparkling Pigment odds.
+        We put all of it in one place in{" "}
+        <Link href="/guides/probability-details/" className="font-semibold text-brand underline">Aniimo Probability Details, explained</Link>.
+      </p>
 
       <p className="mt-10 text-xs text-ink-soft">
         Source: the game&apos;s own Probability Details page. If a patch changes the numbers, this page gets updated —
