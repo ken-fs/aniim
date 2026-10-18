@@ -255,7 +255,7 @@
     "holy"
    ],
    "role": "DPS",
-   "description": "Fennelun is Lunara's evolved battle form. Lunara turns into Fennelun when she casts her Ultimate, Selene's Judgment, and stays that way until the fight ends with 15% more damage. It's a Holy (Light) DPS.",
+   "description": "Fennelun is Lunara's evolved battle form, not a separate Aniimo you catch. Lunara turns into Fennelun when she casts her Ultimate, Selene's Judgment (power 167), and stays that way until the fight ends, with 15% more damage. It's a Holy (Light) DPS with base total 504 and ATK 116.",
    "stats": {
     "total": 504,
     "hp": 90,
