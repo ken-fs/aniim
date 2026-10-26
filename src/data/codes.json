@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-25",
+ "checked": "2026-10-26",
  "source": "community-reported (aniidex.com), verified against official channels",
  "redeem": [
   "Open the menu at the left of the screen, choose Settings, then the Account tab.",
@@ -97,8 +97,7 @@
    "code": "aniimowelcome",
    "rewards": "50 Glimmer + 5 Aniipod Pro + 5 Growth Flower",
    "added": "2026-09-18",
-   "status": "expired",
-   "expired": "2026-10-24"
+   "status": "active"
   },
   {
    "code": "aniimoparty",
