@@ -20,7 +20,7 @@ export function AdsterraBanner({ slot, className = "" }: { slot: AdSlot; classNa
   useEffect(() => {
     const iframe = ref.current;
     if (!iframe || !slot.key || !slot.src) return;
-    iframe.srcdoc = `<!doctype html><html><head><meta charset="utf-8">
+    const html = `<!doctype html><html><head><meta charset="utf-8">
 <style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style>
 </head><body>
 <script type="text/javascript">
@@ -28,6 +28,25 @@ atOptions={key:'${slot.key}',format:'iframe',height:${slot.height},width:${slot.
 </${""}script>
 <script type="text/javascript" src="${slot.src}"></${""}script>
 </body></html>`;
+    // Fill srcdoc only once the slot is actually on screen (or close). srcdoc ignores loading="lazy",
+    // so a CSS-hidden unit (the 728x90 on phones, a collapsed or breakpoint-hidden 300x250) used to
+    // load anyway: impressions for ads nobody could see (found 2026-10-31, game-template-next 591544b).
+    // A display:none element never intersects, so a hidden unit now never loads.
+    if (!("IntersectionObserver" in window)) {
+      if (iframe.offsetParent) iframe.srcdoc = html;
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          iframe.srcdoc = html;
+          io.disconnect();
+        }
+      },
+      { rootMargin: "600px 0px" },
+    );
+    io.observe(iframe);
+    return () => io.disconnect();
   }, [slot.key, slot.width, slot.height, slot.src]);
 
   // Nothing to show until a key is configured.
