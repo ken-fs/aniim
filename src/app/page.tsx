@@ -8,7 +8,7 @@ import { AdsterraBanner } from "@/components/adsterra-banner";
 import { LEADERBOARD, RECTANGLE } from "@/lib/ads";
 
 export const metadata: Metadata = {
-  title: "Aniimo Wiki & Database — Dex, Tier List, Codes & Guides",
+  title: "Aniimo Wiki & Database — 100 Creatures & 3,450 Items",
   description: site.description,
   alternates: { canonical: "/" },
 };
@@ -44,7 +44,7 @@ export default function Home() {
             The complete <span className="text-brand">Aniimo</span> database
           </h1>
           <p className="mt-4 max-w-md text-lg text-ink-soft">
-            {creatures.length} Aniimo with official stats, skills, evolutions and habitats — plus launch codes, tier list and catch-chance math.
+            {creatures.length} Aniimo with official stats, skills, evolutions and habitats — plus the item database, tier list and catch-chance math.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/dex/" className="rounded-xl bg-ink px-5 py-2.5 font-semibold text-paper hover:bg-ink/85">Open the Dex</Link>
@@ -86,6 +86,18 @@ export default function Home() {
         <div className="mt-4 text-right">
           <Link href="/dex/" className="text-sm font-semibold text-brand hover:underline">View all {creatures.length} →</Link>
         </div>
+      </section>
+
+      {/* 全量生物索引：首页直接把每个实体页交给 Google 和读者。 */}
+      <section className="pb-12">
+        <SectionTitle sub="Every creature has its own stats, skills and unlock page">All {creatures.length} Aniimo</SectionTitle>
+        <nav aria-label="All Aniimo creatures" className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          {creatures.map((c) => (
+            <Link key={c.slug} href={`/dex/${c.slug}/`} className="rounded-xl border border-line bg-card px-3 py-2 text-sm font-semibold hover:border-brand hover:text-brand">
+              {c.name}
+            </Link>
+          ))}
+        </nav>
       </section>
 
       {/* 初始选择 */}
