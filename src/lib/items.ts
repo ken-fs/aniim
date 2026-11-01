@@ -1,4 +1,5 @@
 import raw from "@/data/items.json";
+import indexWhitelist from "@/data/item-index-whitelist.json";
 
 // Item pages:每个物品一个 URL(/items/<slug>/)。
 // slug 规则:name 转 kebab;同名或撞 slug 的追加 -<id>;为空用 item-<id>。
@@ -29,6 +30,7 @@ function slugify(name: string) {
 type RawItem = { name?: string; englishName?: string; category?: string; subcategory?: string; qualityName?: string };
 
 function buildAll(): Item[] {
+  // SAFETY: raw.items is our local datamined table; the mapping below supplies defaults for every optional field.
   const data = raw.items as unknown as Record<string, RawItem>;
   const base = Object.entries(data).map(([id, v]) => ({
     id,
@@ -58,6 +60,13 @@ function buildAll(): Item[] {
 
 export const items: Item[] = buildAll();
 export const itemBySlug = new Map(items.map((i) => [i.slug, i]));
+
+// 2026-11-01 GSC whitelist: thin pages stay available to users, but only pages with
+// demonstrated search demand are submitted to search engines. Enrich a page, then
+// add its slug here to restore indexing.
+const indexableSlugs = new Set<string>(indexWhitelist);
+export const indexableItems = items.filter((i) => indexableSlugs.has(i.slug));
+export const isItemIndexable = (slug: string) => indexableSlugs.has(slug);
 
 /** 分类一句话(每页 About 段用,只写确定的事实) */
 export const CATEGORY_BLURB: Record<string, string> = {

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { creatures, elements, roles } from "@/lib/creatures";
 import { CreatureCard, SectionTitle } from "@/components/ui";
 import { site } from "@/lib/site";
+import { itemBySlug } from "@/lib/items";
 import codes from "@/data/codes.json";
 import { AdsterraBanner } from "@/components/adsterra-banner";
 import { LEADERBOARD, RECTANGLE } from "@/lib/ads";
@@ -13,12 +14,24 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+const POPULAR_ITEM_SLUGS = [
+  "harvest-moon-osmanthus-rain",
+  "floral-windmill",
+  "seafarer-straw-hat",
+  "claw-game-cooker",
+  "moody-cap-pack",
+  "stellar-hourglass",
+  "supreme-elixir-551008",
+  "valiant",
+];
+
 export default function Home() {
   const totalForms = creatures.reduce((n, c) => n + Object.keys(c.forms).length, 0);
   const starterA = creatures.find((c) => c.name === "Helion");
   const starterB = creatures.find((c) => c.name === "Lunara");
   const featured = [...creatures].sort((a, b) => (b.base.stats.total ?? 0) - (a.base.stats.total ?? 0)).slice(0, 8);
   const activeCodes = codes.codes.filter((c) => c.status === "active");
+  const popularItems = POPULAR_ITEM_SLUGS.map((slug) => itemBySlug.get(slug)!);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -98,6 +111,18 @@ export default function Home() {
             </Link>
           ))}
         </nav>
+      </section>
+
+      {/* 有真实搜索需求的物品页：首页只推荐优质页，完整数据库仍在 /items/。 */}
+      <section className="pb-12">
+        <SectionTitle sub="Item pages with existing search demand">Popular item guides</SectionTitle>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+          {popularItems.map((item) => (
+            <Link key={item.slug} href={`/items/${item.slug}/`} className="rounded-xl border border-line bg-card px-3 py-2 text-sm font-semibold hover:border-brand hover:text-brand">
+              {item.name}
+            </Link>
+          ))}
+        </div>
       </section>
 
       {/* 初始选择 */}

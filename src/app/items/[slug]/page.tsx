@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { items, itemBySlug, RARITY_STYLE, CATEGORY_BLURB, SUBCATEGORY_BLURB } from "@/lib/items";
+import { items, itemBySlug, isItemIndexable, RARITY_STYLE, CATEGORY_BLURB, SUBCATEGORY_BLURB } from "@/lib/items";
 import { AdsterraBanner } from "@/components/adsterra-banner";
 import { RECTANGLE } from "@/lib/ads";
 
@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description: `${it.name} is a ${it.rarity} ${sub}${it.category} item in Aniimo. Rarity, category and related items in the aniim.org item database.`,
     alternates: { canonical: `/items/${it.slug}/` },
+    robots: { index: isItemIndexable(it.slug), follow: true },
   };
 }
 
