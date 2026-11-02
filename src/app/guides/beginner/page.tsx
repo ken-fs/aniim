@@ -69,7 +69,7 @@ export default function BeginnerGuide() {
         </table>
       </div>
       <p className="mt-3 text-sm text-ink-soft">
-        Pick Helion if you like burst damage. Pick Lunara if you like staying alive. You can catch the other one later
+        Lunara turns into <Link href="/dex/fennelun/" className="text-brand underline">Fennelun</Link> mid-fight (<Link href="/guides/evolution/" className="text-brand underline">how it works</Link>). Want every tool in one place? Go back to the <Link href="/" className="text-brand underline">Aniimo database home</Link>. Pick Helion if you like burst damage. Pick Lunara if you like staying alive. You can catch the other one later
         anyway.
       </p>
 

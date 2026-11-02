@@ -47,6 +47,18 @@ export default function EvolutionGuide() {
         are for your team; base stages are for your dex.
       </p>
 
+      <h2 className="font-display mt-10 text-2xl font-bold">Fennelun: Lunara&apos;s evolved form</h2>
+      <p className="mt-2 text-ink-soft">
+        Fennelun is what Lunara turns into in a fight. You can&apos;t catch it. Lunara changes when she casts her Ultimate,
+        Selene&apos;s Judgment (power 167), and stays Fennelun until combat ends, with 15% more damage.
+      </p>
+      <p className="mt-2 text-ink-soft">
+        It&apos;s a Holy (Light) DPS with a base total of 504 and ATK 116. Her trait, Lunar Power, gives 4 stacks of Silver Moon
+        Mark per skill or Ultimate. Each basic hit spends one stack for extra damage and a little healing. See the full
+        stats on the <Link href="/dex/fennelun/" className="font-semibold text-brand underline">Fennelun page</Link>, or{" "}
+        <Link href="/guides/beginner/" className="font-semibold text-brand underline">compare Lunara with Helion</Link>.
+      </p>
+
       <h3 className="font-display mt-6 text-xl font-bold">Not everything evolves</h3>
       <p className="mt-2 text-ink-soft">
         Out of {creatures.length} Aniimo on the site right now, {chains.length} have evolution chains and{" "}
