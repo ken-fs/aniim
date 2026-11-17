@@ -19,8 +19,9 @@ export default function DexPage() {
     <div className="mx-auto w-full max-w-6xl px-4 py-10">
       <h1 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">Aniimo Dex</h1>
       <p className="mt-2 max-w-2xl text-ink-soft">
-        Every Aniimo available at global launch, with official stats from the in-game index.
-        Click a creature for skills, evolutions, forms and habitats.
+        The Aniimo Dex lists all {creatures.length} Aniimo available at global launch, with base stats from the
+        in-game index. Filter by element or role, then click a creature for skills, evolutions, forms and habitats.
+        Want to know where to find one? Check the <a href="/map/" className="font-semibold text-brand underline">Aniimo map</a>.
       </p>
       <DexBrowser creatures={slim} elements={elements} roles={roles} />
       <AdsterraBanner slot={RECTANGLE} className="mt-10" />

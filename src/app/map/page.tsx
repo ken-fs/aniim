@@ -39,7 +39,7 @@ export default function MapPage() {
       <p className="mt-2 max-w-3xl text-ink-soft">
         Every one of Idyll&apos;s <strong>{regions.length} spawn regions</strong>, with the full Aniimo that live there
         ({covered} of {creatures.length} indexed creatures have confirmed habitats). Pick a region on the left, or search
-        a creature to see where to hunt it.
+        a creature to see where to hunt it. If you searched for the Aniimo map (&quot;aniimap&quot;), this is it: a spawn-spot map by region.
       </p>
       <p className="mt-1 text-xs text-ink-soft">
         This is a spawn-data explorer, not a game-accurate geographic map — region positions and terrain are not modelled.
